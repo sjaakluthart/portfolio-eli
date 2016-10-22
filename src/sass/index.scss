@@ -1,0 +1,9 @@
+@import 'bourbon/bourbon';
+@import 'meyer-reset';
+
+html {
+  width: 100vw;
+  height: 100vh;
+  font-size: 10px;
+  -webkit-overflow-scrolling: touch;
+}

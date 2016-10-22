@@ -1,0 +1,4 @@
+{
+  "extends": "stylelint-config-standard",
+  "ignoreFiles": ["src/sass/bourbon/**/*.scss", "src/sass/meyer-reset.scss"]
+}

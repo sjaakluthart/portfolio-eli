@@ -1,0 +1,12 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+
+  "rules": {
+    "comma-dangle": 0
+  },
+  "globals": {
+    "document": false,
+    "XMLHttpRequest": false
+  }
+}
