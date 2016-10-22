@@ -15,5 +15,5 @@ build
 npm-debug.log
 
 #secrets
-secrets.js
+secrets.json
 settings.json
