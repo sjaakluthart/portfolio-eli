@@ -1,9 +1,18 @@
 @import 'bourbon/bourbon';
 @import 'meyer-reset';
+@import 'variables';
+@import 'fonts';
 
 html {
-  width: 100vw;
-  height: 100vh;
   font-size: 10px;
-  -webkit-overflow-scrolling: touch;
+  font-family: $source-code-pro;
+}
+
+h1,
+h2 {
+  font-weight: $weight-bold;
+}
+
+.app {
+  padding: 3rem;
 }
