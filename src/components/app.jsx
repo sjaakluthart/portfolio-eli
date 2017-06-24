@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Header from './header';
 
 const propTypes = {
   children: PropTypes.node.isRequired
@@ -7,7 +8,7 @@ const propTypes = {
 
 const App = ({ children }) => (
   <main>
-    <h1>Eli Zegers</h1>
+    <Header />
     {children}
   </main>
 );

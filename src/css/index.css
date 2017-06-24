@@ -40,11 +40,45 @@ main {
   box-sizing: border-box;
 }
 
+header h1 {
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+header nav {
+  display: flex;
+  text-transform: uppercase;
+  justify-content: space-between;
+  max-width: 800px;
+  flex-wrap: wrap;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  margin: 4px 0;
+}
+
 .home {
-  height: 100%;
+  height: calc(100% - 168px);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 350px) {
+  .home {
+    height: calc(100% - 120px);
+  }
+}
+
+@media (min-width: 470px) {
+  .home {
+    height: calc(100% - 92px);
+  }
 }
 
 .home img {
