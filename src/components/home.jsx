@@ -28,7 +28,7 @@ class Home extends Component {
 
     if (loading || isEmpty(photos)) {
       return (
-        <article className="home">
+        <article className="loader">
           <Loader />
         </article>
       );
@@ -38,7 +38,7 @@ class Home extends Component {
 
     const style = {
       image: {
-        backgroundImage: `url(${photo.url})`,
+        backgroundImage: `url(${photo.src})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         width: '90%',
