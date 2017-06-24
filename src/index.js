@@ -9,6 +9,7 @@ import store from './store';
 import App from './components/app';
 import Home from './components/home';
 import Paintings from './components/paintings';
+import Drawings from './components/drawings';
 import './css/meyer-reset.css';
 import './css/loader.css';
 import './css/index.css';
@@ -20,6 +21,7 @@ ReactDOM.render(
         <App>
           <Route exact path="/" component={Home} />
           <Route path="/paintings" component={Paintings} />
+          <Route path="/drawings" component={Drawings} />
         </App>
       </Switch>
     </HashRouter>
