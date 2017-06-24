@@ -101,10 +101,6 @@ header nav a {
   max-height: 600px;
 }
 
-.paintings {
-  padding: 16px;
-}
-
 .gallery {
   overflow: auto;
   margin: 16px 0;

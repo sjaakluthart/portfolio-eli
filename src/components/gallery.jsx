@@ -23,7 +23,8 @@ class Gallery extends Component {
       currentImage: 0
     };
 
-    this.toggleLightBox = this.toggleLightBox.bind(this);
+    this.openLightBox = this.openLightBox.bind(this);
+    this.closeLightBox = this.closeLightBox.bind(this);
     this.gotoPrevious = this.gotoPrevious.bind(this);
     this.gotoNext = this.gotoNext.bind(this);
   }
@@ -31,6 +32,20 @@ class Gallery extends Component {
   toggleLightBox() {
     this.setState({
       open: !this.state.open
+    });
+  }
+
+  openLightBox(index) {
+    this.setState({
+      open: true,
+      currentImage: index
+    });
+  }
+
+  closeLightBox() {
+    this.setState({
+      open: false,
+      currentImage: 0
     });
   }
 
@@ -52,11 +67,11 @@ class Gallery extends Component {
     return (
       <section className="gallery">
         <h1>{album.title}</h1>
-        <PhotoGallery photos={album.photos} onClickPhoto={this.toggleLightBox} margin={4} />
+        <PhotoGallery photos={album.photos} onClickPhoto={this.openLightBox} margin={4} />
         <Lightbox
           images={album.photos}
           isOpen={this.state.open}
-          onClose={this.toggleLightBox}
+          onClose={this.closeLightBox}
           onClickPrev={this.gotoPrevious}
           onClickNext={this.gotoNext}
           currentImage={this.state.currentImage}
