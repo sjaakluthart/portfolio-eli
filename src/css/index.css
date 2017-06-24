@@ -112,3 +112,38 @@ header nav a {
   font-size: 24px;
   border-bottom: 2px solid #333;
 }
+
+.cv h1 {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin: 16px 0;
+  font-weight: bold;
+}
+
+.cv h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  border-bottom: 2px solid;
+  margin: 16px 0;
+}
+
+.cv dl {
+  display: flex;
+  flex-direction: column;
+}
+
+.cv dl div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+dt,
+dd {
+  margin: 16px 0;
+}
+
+a {
+  color: #333;
+}

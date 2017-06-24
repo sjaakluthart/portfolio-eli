@@ -11,6 +11,7 @@ import Home from './components/home';
 import Paintings from './components/paintings';
 import Drawings from './components/drawings';
 import Sculptures from './components/sculptures';
+import CV from './components/cv';
 import './css/meyer-reset.css';
 import './css/loader.css';
 import './css/index.css';
@@ -24,6 +25,7 @@ ReactDOM.render(
           <Route path="/paintings" component={Paintings} />
           <Route path="/drawings" component={Drawings} />
           <Route path="/sculptures" component={Sculptures} />
+          <Route path="/cv" component={CV} />
         </App>
       </Switch>
     </HashRouter>
