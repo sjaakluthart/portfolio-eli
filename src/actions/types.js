@@ -1,2 +1,4 @@
 export const HOME_GET = 'HOME_GET';
 export const HOME_GET_SUCCESS = 'HOME_GET_SUCCESS';
+export const PAINTINGS_GET = 'PAINTINGS_GET';
+export const PAINTINGS_GET_SUCCESS = 'PAINTINGS_GET_SUCCESS';

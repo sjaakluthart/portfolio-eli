@@ -16,9 +16,9 @@ const homeGet = () => (
     .then((res) => {
       if (res.status === 200 && res.data.stat === 'ok') {
         const payload = map(res.data.photoset.photo, photo => ({
-          url: photo.url_l,
-          width: photo.width_l,
-          height: photo.height_l
+          src: photo.url_l,
+          width: parseInt(photo.width_l, 10),
+          height: parseInt(photo.height_l, 10)
         }));
 
         dispatch(homeGetSuccess(payload));
