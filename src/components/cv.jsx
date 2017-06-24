@@ -15,7 +15,7 @@ const CV = () => (
       </div>
       <div>
         <dt>Website</dt>
-        <dd><a href="elizegers.nl">elizegers.nl</a></dd>
+        <dd><a href="elizegers.com">elizegers.com</a></dd>
       </div>
       <div>
         <dt>Date of birth</dt>

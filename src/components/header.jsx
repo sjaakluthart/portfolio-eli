@@ -8,7 +8,6 @@ const Header = () => (
       <NavLink to="/paintings">Paintings</NavLink>
       <NavLink to="/drawings">Drawings</NavLink>
       <NavLink to="/sculptures">Sculptures</NavLink>
-      <NavLink to="/about">About</NavLink>
       <NavLink to="/cv">CV</NavLink>
     </nav>
   </header>
