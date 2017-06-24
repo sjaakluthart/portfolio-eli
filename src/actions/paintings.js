@@ -29,7 +29,8 @@ const paintingsGet = () => (
               const photos = map(paintingAlbum.photo, photo => ({
                 src: photo.url_l,
                 width: parseInt(photo.width_l, 10),
-                height: parseInt(photo.height_l, 10)
+                height: parseInt(photo.height_l, 10),
+                caption: photo.title
               }));
 
               dispatch(paintingsGetSuccess({

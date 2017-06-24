@@ -18,7 +18,8 @@ const homeGet = () => (
         const payload = map(res.data.photoset.photo, photo => ({
           src: photo.url_l,
           width: parseInt(photo.width_l, 10),
-          height: parseInt(photo.height_l, 10)
+          height: parseInt(photo.height_l, 10),
+          caption: photo.title
         }));
 
         dispatch(homeGetSuccess(payload));
