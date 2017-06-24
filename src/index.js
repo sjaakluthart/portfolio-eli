@@ -9,6 +9,7 @@ import store from './store';
 import App from './components/app';
 import Home from './components/home';
 import './css/meyer-reset.css';
+import './css/loader.css';
 import './css/index.css';
 
 ReactDOM.render(

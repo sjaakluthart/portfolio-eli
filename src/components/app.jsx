@@ -8,9 +8,7 @@ const propTypes = {
 const App = ({ children }) => (
   <main>
     <h1>Eli Zegers</h1>
-    <section>
-      {children}
-    </section>
+    {children}
   </main>
 );
 

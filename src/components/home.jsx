@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import isEmpty from 'lodash/isEmpty';
 import Chance from 'chance';
 import homeGet from '../actions/home';
+import Loader from './loader';
 
 const chance = new Chance();
 
@@ -27,18 +28,27 @@ class Home extends Component {
 
     if (loading || isEmpty(photos)) {
       return (
-        <article>
-          <h1>loading</h1>
+        <article className="home">
+          <Loader />
         </article>
       );
     }
 
     const photo = chance.pickone(photos);
 
+    const style = {
+      image: {
+        backgroundImage: `url(${photo.url})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        width: '80%',
+        height: '80%'
+      }
+    };
+
     return (
-      <article>
-        <h1>home</h1>
-        <img src={photo.url} alt="home" />
+      <article className="home">
+        <div style={style.image} />
       </article>
     );
   }
