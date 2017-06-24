@@ -46,7 +46,7 @@ header {
 }
 
 header > a {
-  display: block;
+  display: inline;
   text-decoration: none;
   color: #333;
   text-transform: uppercase;

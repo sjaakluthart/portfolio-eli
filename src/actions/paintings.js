@@ -20,7 +20,7 @@ const paintingsGet = () => (
         const albums = res.data.collections.collection[0].set;
 
         each(albums, (album) => {
-          const albumUrl = `https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=${settings.apiKey}&photoset_id=${album.id}&user_id=${settings.userId}&extras=url_l&format=json&nojsoncallback=1`;
+          const albumUrl = `https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=${settings.apiKey}&photoset_id=${album.id}&user_id=${settings.userId}&extras=url_l,description&format=json&nojsoncallback=1`;
           return axios.get(albumUrl)
           .then((paintingRes) => {
             if (paintingRes.status === 200 && paintingRes.data.stat === 'ok') {
@@ -30,7 +30,7 @@ const paintingsGet = () => (
                 src: photo.url_l,
                 width: parseInt(photo.width_l, 10),
                 height: parseInt(photo.height_l, 10),
-                caption: photo.title
+                caption: `${photo.title}${photo.description && photo.description._content ? ` - ${photo.description._content}` : ''}` // eslint-disable-line no-underscore-dangle
               }));
 
               dispatch(paintingsGetSuccess({
