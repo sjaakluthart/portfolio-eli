@@ -1,14 +1,12 @@
 import { combineReducers } from 'redux';
 import homeReducer from './home';
-import paintingsReducer from './paintings';
-import drawingsReducer from './drawings';
-import sculpturesReducer from './sculptures';
+import collectionsReducer from './collections';
+import setsReducer from './sets';
 
 const rootReducer = combineReducers({
   home: homeReducer,
-  paintings: paintingsReducer,
-  drawings: drawingsReducer,
-  sculptures: sculpturesReducer
+  collections: collectionsReducer,
+  sets: setsReducer
 });
 
 export default rootReducer;

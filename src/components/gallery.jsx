@@ -4,7 +4,7 @@ import Lightbox from 'react-images';
 import PhotoGallery from './photo-gallery';
 
 const propTypes = {
-  album: PropTypes.shape({
+  set: PropTypes.shape({
     title: PropTypes.string.isRequired,
     photos: PropTypes.arrayOf(PropTypes.shape({
       src: PropTypes.string.isRequired,
@@ -62,14 +62,14 @@ class Gallery extends Component {
   }
 
   render() {
-    const { album } = this.props;
+    const { set } = this.props;
 
     return (
       <section className="gallery">
-        <h1>{album.title}</h1>
-        <PhotoGallery photos={album.photos} onClickPhoto={this.openLightBox} margin={4} />
+        <h1>{set.title}</h1>
+        <PhotoGallery photos={set.photos} onClickPhoto={this.openLightBox} margin={4} />
         <Lightbox
-          images={album.photos}
+          images={set.photos}
           isOpen={this.state.open}
           onClose={this.closeLightBox}
           onClickPrev={this.gotoPrevious}
