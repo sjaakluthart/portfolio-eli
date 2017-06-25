@@ -68,11 +68,19 @@ header nav a {
   color: #333;
   font-size: 20px;
   margin: 4px;
+  border-bottom: 2px solid;
+  border-color: transparent;
+  transition: all .3s ease-in-out;
+}
+
+header nav a:hover,
+header nav a.active {
+  border-color: #333;
 }
 
 .home,
 .loader {
-  height: calc(100% - 172px);
+  height: calc(100% - 174px);
 }
 
 .home,
@@ -85,14 +93,14 @@ header nav a {
 @media (min-width: 350px) {
   .home,
   .loader {
-    height: calc(100% - 124px);
+    height: calc(100% - 126px);
   }
 }
 
 @media (min-width: 470px) {
   .home,
   .loader {
-    height: calc(100% - 96px);
+    height: calc(100% - 98px);
   }
 }
 
