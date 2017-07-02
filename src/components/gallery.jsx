@@ -75,6 +75,7 @@ class Gallery extends Component {
           onClickPrev={this.gotoPrevious}
           onClickNext={this.gotoNext}
           currentImage={this.state.currentImage}
+          showImageCount={false}
         />
       </section>
     );
