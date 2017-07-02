@@ -50,9 +50,8 @@ header > a {
   text-decoration: none;
   color: #333;
   text-transform: uppercase;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: bold;
-  margin-bottom: 16px;
 }
 
 header nav {
@@ -61,6 +60,8 @@ header nav {
   justify-content: space-between;
   max-width: 800px;
   flex-wrap: wrap;
+  margin-top: 24px;
+  padding-bottom: 8px;
 }
 
 header nav a {
@@ -80,7 +81,9 @@ header nav a.active {
 
 .home,
 .loader {
-  height: calc(100% - 174px);
+  height: calc(100% - 182px);
+  padding: 32px;
+  box-sizing: border-box;
 }
 
 .home,
@@ -93,14 +96,14 @@ header nav a.active {
 @media (min-width: 350px) {
   .home,
   .loader {
-    height: calc(100% - 126px);
+    height: calc(100% - 134px);
   }
 }
 
 @media (min-width: 470px) {
   .home,
   .loader {
-    height: calc(100% - 98px);
+    height: calc(100% - 106px);
   }
 }
 
@@ -119,6 +122,10 @@ header nav a.active {
   margin-bottom: 8px;
   font-size: 24px;
   border-bottom: 2px solid #333;
+}
+
+.cv {
+  padding: 32px 0;
 }
 
 .cv h1 {
@@ -154,4 +161,8 @@ dd {
 
 a {
   color: #333;
+}
+
+.collection {
+  padding: 32px 0;
 }
