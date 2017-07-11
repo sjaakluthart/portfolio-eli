@@ -37,8 +37,12 @@ main {
 }
 
 main {
-  padding: 32px;
+  padding: 48px;
   box-sizing: border-box;
+}
+
+header {
+  padding: 0 48px;
 }
 
 header {
@@ -60,7 +64,7 @@ header nav {
   justify-content: space-between;
   max-width: 800px;
   flex-wrap: wrap;
-  margin-top: 24px;
+  margin-top: 32px;
   padding-bottom: 8px;
 }
 
@@ -81,9 +85,14 @@ header nav a.active {
 
 .home,
 .loader {
-  height: calc(100% - 182px);
+  height: calc(100% - 190px);
   padding: 32px;
   box-sizing: border-box;
+}
+
+.home {
+  padding-top: 48px;
+  padding-bottom: 0;
 }
 
 .home,
@@ -96,14 +105,14 @@ header nav a.active {
 @media (min-width: 350px) {
   .home,
   .loader {
-    height: calc(100% - 134px);
+    height: calc(100% - 142px);
   }
 }
 
 @media (min-width: 470px) {
   .home,
   .loader {
-    height: calc(100% - 106px);
+    height: calc(100% - 114px);
   }
 }
 
@@ -115,6 +124,7 @@ header nav a.active {
 .gallery {
   overflow: auto;
   margin: 16px 0;
+  padding: 0 48px;
 }
 
 .gallery h1 {
