@@ -26,6 +26,7 @@ class App extends Component {
     if (loading || isEmpty(collections)) {
       return (
         <main>
+          <Header collections={collections} />
           <article className="loader">
             <Loader />
           </article>
