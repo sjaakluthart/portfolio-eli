@@ -41,8 +41,8 @@ class Home extends Component {
         backgroundImage: `url(${photo.src})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        width: '90%',
-        height: '90%'
+        width: '56%',
+        height: '100%'
       }
     };
 
