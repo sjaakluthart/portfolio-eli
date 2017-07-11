@@ -28,7 +28,7 @@ body {
 body {
   font-family: Source Code Pro, sans-serif;
   font-weight: normal;
-  color: #333;
+  color: #000;
 }
 
 #root,
@@ -42,13 +42,13 @@ main {
 }
 
 header {
-  border-bottom: 4px solid #333;
+  border-bottom: 4px solid #000;
 }
 
 header > a {
   display: inline;
   text-decoration: none;
-  color: #333;
+  color: #000;
   text-transform: uppercase;
   font-size: 40px;
   font-weight: bold;
@@ -66,7 +66,7 @@ header nav {
 
 header nav a {
   text-decoration: none;
-  color: #333;
+  color: #000;
   font-size: 20px;
   margin: 4px;
   border-bottom: 2px solid;
@@ -76,7 +76,7 @@ header nav a {
 
 header nav a:hover,
 header nav a.active {
-  border-color: #333;
+  border-color: #000;
 }
 
 .home,
@@ -121,7 +121,7 @@ header nav a.active {
   padding-bottom: 8px;
   margin-bottom: 8px;
   font-size: 24px;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #000;
 }
 
 .cv {
@@ -160,7 +160,7 @@ dd {
 }
 
 a {
-  color: #333;
+  color: #000;
 }
 
 .collection {
