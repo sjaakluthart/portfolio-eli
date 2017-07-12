@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import map from 'lodash/map';
+import sortBy from 'lodash/sortBy';
 import isEmpty from 'lodash/isEmpty';
 import Gallery from './gallery';
 import setsGet from '../actions/sets';
@@ -42,9 +43,11 @@ class Paintings extends Component {
       );
     }
 
+    const sortedSets = sortBy(sets, 'createdAt').reverse();
+
     return (
       <article className="collection">
-        {map(sets, set => (
+        {map(sortedSets, set => (
           <Gallery key={set.title} set={set} />
         ))}
       </article>
