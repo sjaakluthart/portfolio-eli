@@ -191,3 +191,11 @@ a {
   transition: all .3s ease-in-out;
   cursor: pointer;
 }
+
+.collection > div:first-of-type .gallery {
+  margin-top: 0;
+}
+
+.collection > div:last-of-type .gallery {
+  margin-bottom: 0;
+}
