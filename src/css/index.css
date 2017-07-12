@@ -178,6 +178,14 @@ dd {
   margin: 16px 0;
 }
 
+dt {
+  width: 300px;
+}
+
+dd {
+  width: calc(100% - 300px);
+}
+
 a {
   color: #000;
 }
