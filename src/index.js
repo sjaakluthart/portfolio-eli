@@ -10,6 +10,7 @@ import App from './components/app';
 import Home from './components/home';
 import Collection from './components/collection';
 import CV from './components/cv';
+import About from './components/about';
 import './css/meyer-reset.css';
 import './css/loader.css';
 import './css/index.css';
@@ -22,6 +23,7 @@ ReactDOM.render(
           <Route exact path="/" component={Home} />
           <Route path="/collection/:collectionId" component={Collection} />
           <Route path="/cv" component={CV} />
+          <Route path="/about" component={About} />
         </App>
       </Switch>
     </HashRouter>

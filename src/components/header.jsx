@@ -16,6 +16,7 @@ const Header = ({ collections }) => (
           {collection.title}
         </NavLink>
       ))}
+      <NavLink to="/about">ABOUT</NavLink>
       <NavLink to="/cv">CV</NavLink>
     </nav>
   </header>
