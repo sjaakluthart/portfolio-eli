@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import map from 'lodash/map';
 import sortBy from 'lodash/sortBy';
 import isEmpty from 'lodash/isEmpty';
+import { Link, Element } from 'react-scroll';
 import Gallery from './gallery';
 import setsGet from '../actions/sets';
 import Loader from './loader';
@@ -47,8 +48,24 @@ class Paintings extends Component {
 
     return (
       <article className="collection">
+        <nav>
+          {map(sortedSets, set => (
+            <Link
+              key={set.title}
+              activeClass="active"
+              to={set.title}
+              spy
+              smooth
+              offset={-48}
+            >
+              {set.title}
+            </Link>
+          ))}
+        </nav>
         {map(sortedSets, set => (
-          <Gallery key={set.title} set={set} />
+          <Element key={set.title} name={set.title}>
+            <Gallery set={set} />
+          </Element>
         ))}
       </article>
     );

@@ -79,7 +79,9 @@ header nav a {
 }
 
 header nav a:hover,
-header nav a.active {
+header nav a.active,
+.collection nav a:hover,
+.collection nav a.active {
   border-color: #000;
 }
 
@@ -124,13 +126,12 @@ header nav a.active {
 .gallery {
   overflow: auto;
   margin: 16px 0;
-  padding: 0 48px;
 }
 
 .gallery h1 {
   padding-bottom: 8px;
   margin-bottom: 8px;
-  font-size: 24px;
+  font-size: 32px;
   border-bottom: 2px solid #000;
 }
 
@@ -174,5 +175,19 @@ a {
 }
 
 .collection {
-  padding: 32px 0;
+  padding: 32px 48px;
+}
+
+.collection nav {
+  display: flex;
+  justify-content: center;
+}
+
+.collection nav a {
+  margin: 0 16px;
+  font-size: 18px;
+  border-bottom: 2px solid;
+  border-color: transparent;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
 }
