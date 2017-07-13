@@ -37,12 +37,8 @@ main {
 }
 
 main {
-  padding: 48px;
+  padding: 24px;
   box-sizing: border-box;
-}
-
-header {
-  padding: 0 48px;
 }
 
 header {
@@ -191,7 +187,7 @@ a {
 }
 
 .collection {
-  padding: 32px 48px;
+  padding: 32px 0;
 }
 
 .collection nav {
@@ -214,4 +210,20 @@ a {
 
 .collection > div:last-of-type .gallery {
   margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 48px;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    padding: 0 48px;
+  }
+
+  .collection {
+    padding: 32px 48px;
+  }
 }
