@@ -121,12 +121,12 @@ header nav a.active,
 
 .gallery {
   overflow: auto;
-  margin: 16px 0;
+  margin: 32px 0;
 }
 
 .gallery h1 {
   padding-bottom: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   font-size: 32px;
   border-bottom: 2px solid #000;
 }
