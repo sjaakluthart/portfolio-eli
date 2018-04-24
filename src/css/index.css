@@ -193,11 +193,12 @@ a {
 .collection nav {
   display: flex;
   justify-content: center;
+  margin-bottom: 16px;
 }
 
 .collection nav a {
-  margin: 0 16px;
-  font-size: 18px;
+  margin: 0 8px;
+  font-size: 15px;
   border-bottom: 2px solid;
   border-color: transparent;
   transition: all .3s ease-in-out;
