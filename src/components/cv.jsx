@@ -77,6 +77,22 @@ const CV = () => (
     <h2>Group EXHIBITIONS</h2>
     <dl>
       <div>
+        <dt>30-03-2018 – 13-04-2018</dt>
+        <dd>StateCamp, Slash Gallery, Worm, Rotterdam</dd>
+      </div>
+      <div>
+        <dt>28-01-2018 - 04-03-2018</dt>
+        <dd>Is it me you&apos;re looking for? - Kunstenlab, Deventer</dd>
+      </div>
+      <div>
+        <dt>13-10-2017 – 15-10-2017</dt>
+        <dd>Hello, Goodbye, Handelskade 13, Deventer</dd>
+      </div>
+      <div>
+        <dt>08-09-2017 – 10-09-2017 </dt>
+        <dd>Fresco et frutato, Kruiskade 70, npRotterdam</dd>
+      </div>
+      <div>
         <dt>14-05-2017 – 19-06-2017</dt>
         <dd>Proefdier Vrij, Kunstenlab, Havenplein 151 Deventer</dd>
       </div>
