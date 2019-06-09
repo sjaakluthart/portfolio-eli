@@ -77,6 +77,14 @@ const CV = () => (
     <h2>Group EXHIBITIONS</h2>
     <dl>
       <div>
+        <dt>26-01-2019 – 23-06-2019</dt>
+        <dd>5 Jaar Kunstgemaal, Kunstgemaal, Bronckhorst</dd>
+      </div>
+      <div>
+        <dt>18-07-2018 – 21-07-2018</dt>
+        <dd>Skauhytt Residentie, Kunstgemaal, Bronckhorst</dd>
+      </div>
+      <div>
         <dt>30-03-2018 – 13-04-2018</dt>
         <dd>StateCamp, Slash Gallery, Worm, Rotterdam</dd>
       </div>
